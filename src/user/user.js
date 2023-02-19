@@ -61,6 +61,14 @@ $(document).ready(function () {
   $('#resolveTicket2').click(function(){
     $('#reply2').toggleClass('hidden'); 
   });
+  $('#closeTicket1').click(function(){
+    $('#ticket1').addClass('hidden');
+    console.log("hello");
+  });
+  
+  $('#closeTicket2').click(function(){
+    $('#ticket2').addClass('hidden');
+  });
   //Functions for opening the reply section from resolving button
 
 // Function for closing and opening of reply section
@@ -121,4 +129,6 @@ function errorTicket(){
     stopOnFocus: true, // Prevents dismissing of toast on hover
     onClick: function(){} // Callback after click
 }).showToast();}
+
+
 });
